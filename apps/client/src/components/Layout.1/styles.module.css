@@ -1,71 +1,42 @@
-#app {
-  height: 100vh;
-
-  /* grid container settings */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 5fr 0.5fr;
+.page {
+  /* overflow: hidden; */
+  /* display: grid; */
+  /* place-items: center; */
+  /* grid-template-rows: 5fr 1fr;
   grid-template-areas:
     'main'
-    'footer';
+    'footer'; */
+  /* gap: 1em; */
 }
 
-#app > header {
-  grid-area: header;
-}
-
-#app > main {
-  /* | Base | */
-  z-index: 2;
-  color: var(--color_light_2);
-  background-color: var(--overlay_accent_1);
-
-  /* | Grid | */
-  grid-area: main;
-  overflow: auto;
-  padding: 1em;
-
-  /* | SubGrid | */
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
-}
-
-#app > footer {
-  /* | Base | */
-  z-index: 2;
-  color: var(--color_light_2);
-  background-color: var(--overlay_accent_2);
-
-  /* | Grid | */
-  grid-area: footer;
-
-  /* | SubGrid | */
-  display: grid;
-  grid-template-columns: 0.3fr 1fr 1.05fr 0.03fr 1fr 0.03fr 1fr 0.3fr;
-  grid-template-areas: '. nav nav sep1 social sep2 brand .';
-  gap: 0.3em;
-  padding: 1em 0em 1em 0em;
-}
-
-#hero_image {
+.page_background {
   z-index: -2;
 }
 
-#hero_overlay {
+.page_overlay {
   z-index: -1;
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: var(--overlay_dark_1);
+  background-color: var(--color_dark_4);
+}
+
+.main,
+.footer {
+  z-index: 2;
+}
+
+.main {
+  height: 80vh;
+  color: var(--color_light_1);
 }
 
 .footer {
-  /* height: 20vh; */
-  background-color: var(--color_accent_2);
+  height: 20vh;
+  background-color: var(--color_accent_4);
   display: grid;
-  grid-area: footer;
   grid-template-columns: 0.3fr 1fr 1.05fr 0.03fr 1fr 0.03fr 1fr 0.3fr;
-  grid-template-areas: '. nav nav sep1 social sep2 brand .';
+  grid-template-areas: ". nav nav sep1 social sep2 brand .";
   gap: 0.3em;
   padding: 1em 0em 1em 0em;
 }
@@ -121,6 +92,7 @@
   /* font-size: 3em; */
   font-size: 4vw;
   text-transform: capitalize;
+
 }
 
 .footer_branding > * > p {
@@ -142,6 +114,7 @@
 .footer_seperator2 {
   grid-area: sep2;
 }
+
 
 .footerTwitter {
   border-radius: 50%;

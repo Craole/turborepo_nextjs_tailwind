@@ -42,11 +42,15 @@ font-family: "JetBrains Mono", monospace;
   --color_dark_1: #0c090a; /* Night */
   --color_dark_2: #3d3c3a; /* Iridium */
   --color_dark_3: #29465b; /* Dark Blue Grey */
-  --color_dark_4: rgba(2, 12, 16, 0.90);
   --color_accent_1: #aa6c39; /* Dark Gold */
   --color_accent_2: #f5e216; /* Banana Yellow */
   --color_accent_3: #f70d1a; /* Ferrari Red */
-  --color_accent_4: rgba(50, 0, 0, 0.5);
+  --overlay_dark_1: rgba(2, 12, 16, 0.90);
+  --overlay_dark_2: rgba(2, 12, 16, 0.90);
+  --overlay_accent_1: rgba(12, 9, 10, 0.50);
+  --overlay_accent_2: rgba(50, 0, 0, 0.50);
+  --overlay_light_1: rgba(50, 0, 0, 0.90);
+  --overlay_light_2: rgba(50, 0, 0, 0.90);
 
   /* >>= FONTS =<< */
   --font_display_1: "Big Shoulders Stencil Display", cursive;

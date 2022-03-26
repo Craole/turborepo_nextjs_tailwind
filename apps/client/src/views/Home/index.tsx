@@ -1,17 +1,13 @@
-// import { Layout } from '@/components';
+import { Layout } from '@/components'
 import { BlueRounded, RedRounded } from '@/components/Buttons'
-import Head from 'next/head';
 
 const Home = () => {
   return (
     <>
-      <Head>
-        <title>CRAOLE | Home</title>
-      </Head>
       <h1>Home</h1>
       <BlueRounded />
       <RedRounded />
-      <article className="prose lg:prose-xl">
+      <article className="prose lg:prose-xl text-slate-100">
         <h1>Garlic bread with cheese: What the science tells us</h1>
         <p>
           For years parents have espoused the health benefits of eating garlic
@@ -25,11 +21,11 @@ const Home = () => {
         </p>
       </article>
     </>
-  );
-};
+  )
+}
 
-// Home.getLayout = function getLayout(page: typeof Home) {
-//   return <Layout>{page}</Layout>;
-// };
+Home.getLayout = function getLayout(page: typeof Home) {
+  return <Layout>{page}</Layout>
+}
 
-export default Home;
+export default Home

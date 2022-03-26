@@ -2,12 +2,12 @@
 import { Link, LinkExternal, Paths } from '@/helpers'
 import React from 'react';
 import Styles from './styles.module.css';
-// import Github from '@/components/Icons/Github'
-import { Facebook } from '@/components/Icons';
+import Github from '@/components/Icons/Github'
+import { Facebook } from '@/components/Icons'
 
 export default function Footer() {
   return (
-    <footer >
+    <footer className={Styles.footer}>
       <nav className={Styles.footer_nav_site} aria-label="primary navigation">
         <Link href="/">
           <a>Home</a>
